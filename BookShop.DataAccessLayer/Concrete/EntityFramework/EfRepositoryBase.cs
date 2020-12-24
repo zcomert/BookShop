@@ -25,22 +25,36 @@ namespace BookShop.DataAccessLayer.Concrete.EntityFramework
 
         public void Delete(Tentity entity)
         {
-            throw new NotImplementedException();
+            using (var context = new Tcontext())
+            {
+                context.Entry(entity).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
         }
 
         public Tentity Get(int id)
         {
-            throw new NotImplementedException();
+            using (var context = new Tcontext())
+            {
+                return context.Set<Tentity>().SingleOrDefault(x => x.Id == id);
+            }
         }
 
         public List<Tentity> GetAll()
         {
-            throw new NotImplementedException();
+            using (var context = new Tcontext())
+            {
+                return context.Set<Tentity>().ToList();
+            }
         }
 
         public void Update(Tentity entity)
         {
-            throw new NotImplementedException();
+            using (var context = new Tcontext())
+            {
+                context.Entry(entity).State = EntityState.Modified;
+                context.SaveChanges();
+            }
         }
     }
 }

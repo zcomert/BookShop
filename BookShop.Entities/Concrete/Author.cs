@@ -9,7 +9,7 @@ namespace BookShop.Entities.Concrete
 {
     public class Author : IEntity
     {
-        public int AuthorId { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
     }
