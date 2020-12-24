@@ -18,9 +18,19 @@ namespace BookShop.BusinessLayer.Concrete
             _bookDal = bookDal;
         }
 
+        public void Add(Book book)
+        {
+            _bookDal.Add(book);
+        }
+
         public List<Book> GetAll()
         {
             return _bookDal.GetAll();
+        }
+
+        public void Update(Book book)
+        {
+            _bookDal.Update(book);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace BookShop.Entities.Concrete
         public int Id { get; set; }
         public string Title { get; set; }
         public decimal UnitPrice { get; set; }
+        public Author Author { get; set; }
         public override string ToString() =>
             $"{Id,-5} {Title,-35} {UnitPrice,-5}";
         

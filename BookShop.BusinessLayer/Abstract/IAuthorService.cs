@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace BookShop.BusinessLayer.Abstract
 {
-    public interface IBookService
+    interface IAuthorService
     {
-        List<Book> GetAll();
-        void Add(Book book);
-        void Update(Book book);
+        List<Author> GetAll();
+        void Add(Author author);
+        void Update(Author author);
     }
 }

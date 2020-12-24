@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace BookShop.DataAccessLayer.Concrete.EntityFramework
 {
-    public class EfBookDal : EfRepositoryBase<Book,BookShopContext>,
-        IBookDal
+    public class EfAuthorDal : EfRepositoryBase<Author,BookShopContext>, 
+        IAuthorDal
     {
         
     }

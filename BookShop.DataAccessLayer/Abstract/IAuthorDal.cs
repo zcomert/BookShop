@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookShop.DataAccessLayer.Abstract
 {
-    public interface IBookDal  : IEntityRepository<Book>
+    public interface IAuthorDal : IEntityRepository<Author>
     {
        
     }
